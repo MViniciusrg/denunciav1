@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/assets/iconsite.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denúncia</title>
+</head>
+<body>
+    <header id="header">
+        <div id="imgheader">
+            <img id="imgheader"src="assets/icon.png" alt="">
+        </div>
+    </header>
+    <main>
+
+        <div id="box">
+
+        </div>
+
+        <div id="textinho">
+            <p>Está sofrendo algum tipo de violência ou quer ajudar alguém que esteja nessa situação? Denuncie! Nós iremos te ajudar. Preencha o formulário abaixo e você já estará realizando sua denúncia de forma segura e sigilosa. Ela será recebida diretamente pelas autoridades policiais, que tomarão as providências necessárias ao caso.</p>
+        </div>
+
+        <div id="info">
+            <p>Os campos obrigatórios são identificados com a *, mas quanto mais informações, melhor! </p>
+            <p><b>Atenção:</b> Utilize com responsabilidade. Comunicar a uma autoridade fato criminoso que não existiu é crime.</p>
+        </div>
+
+        <p id="mensagemEnv">Denúncia enviada</p>
+
+        <div id="panel">
+
+            <!-- INPUTS -->
+            <label for="tipoViolencia">Tipo de violência:* </label>
+
+            <select class="optionSelect" name="" id="tipoViolencia">
+                <option value="fisica">Física</option>
+                <option value="psicologica">Psicológica</option>
+                <option value="sexual">Sexual</option>
+                <option value="patrimonial">Patrimonial</option>
+                <option value="moral">Moral</option>
+            </select>
+            <label for="quemDenuncia">Quem está realizando a denúncia:*</label>
+
+            <select name="" id="quemDenuncia" class="optionSelect">
+                <option value="anonimo">Anônimo</option>
+                <option value="vitma">Vítma</option>
+                <option value="familiar">Familiar</option>
+                <option value="vizinho">Vizinho</option>
+            </select>
+            <label for="nomeVitma">Nome da vítma:* </label>
+
+            <input class="optionEscr" type="text" name="" id="nomeVitma">
+            
+            <label for="corVitma">Cor da vítma: </label>
+
+            <select name="" id="corVitma" class="optionSelect">
+                <option value="amarela">Amarela</option>
+                <option value="branca">Branca</option>
+                <option value="familiar">Indigena</option>
+                <option value="negra">Negra</option>
+                <option value="parda">Parda</option>
+            </select>
+
+            <label for="nomeAgr">Nome do agressor:* </label>
+
+            <input class="optionEscr" type="text" name="" id="nomeAgr">
+
+            <label for="idadeAgr">Idade do agressor: </label>
+
+            <select name="" id="idadeAgr" class="optionSelect">
+                <option value="a19">Até 19 anos</option>
+                <option value="e20">Entre 20 e 59 anos</option>
+                <option value="m60">60 anos ou mais</option>
+            </select>
+            
+            
+            <label for="corAgr">Cor do agressor: </label>
+
+            <select name="" id="corAgr" class="optionSelect">
+                <option value="amarela">Amarela</option>
+                <option value="branca">Branca</option>
+                <option value="familiar">Indigena</option>
+                <option value="negra">Negra</option>
+                <option value="parda">Parda</option>
+            </select>
+
+            <label for="endAgr">Endereço da ocorrência:* </label>
+            <input class="optionEscr" type="text" name="" id="endAgr">
+            
+            <label for="nAgr">Número da residência: </label>
+            <input class="optionEscr" type="text" name="" id="nAgr">
+            <label for="bOcorrencia">Bairro da ocorrência:* </label>
+            <input class="optionEscr" type="text" name="" id="bOcorrencia">
+            <label for="pRef">Ponto de referência/complemento: </label>
+            <input class="optionEscr" type="text" name="" id="pRef">
+            <label for="CEP">CEP: </label>
+            <input readonly class="optionEscr" type="text" name="" id="CEP" value="77300-000">
+            <label for="dataDenuncia">Data de denúncia:* </label>
+            <input class="optionEscr" type="date" name="" id="dataDenuncia">
+            <label for="optionRelato">Breve relato da situação de violência: </label>
+            <input class="optionRelato" type="text" name="" id="relato">
+            
+            <!-- FILE -->
+
+            <label for="anexoArq">Anexar arquivo:</label>
+            <input type="file" name="Anexar arquivo" id="anexoArq" >
+
+
+            <!-- ENVIAR -->
+            
+            <input type="button" value="Enviar denúncia" id="sendBtn">
+
+        </div>
+    </main>
+    <footer></footer>
+</body>
+<script src="script.js"></script>
+</html>
